@@ -46,6 +46,9 @@ android {
 
 }
 
+configurations.all {
+    exclude group: 'com.google.android.exoplayer', module: 'exoplayer-ui'
+}
 
 dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
